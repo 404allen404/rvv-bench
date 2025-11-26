@@ -36,8 +36,7 @@ static void print_flush(void);
 #if (__clang_major__ <= 17 && __clang_major__ >= 13) || __GNUC__ == 13
 # define SYSCALL_CLOBBERS "a7", "memory", SYSCALL_VREGS
 #elif defined(__riscv_vector) || __clang_major__ >= 18 || __GNUC__ > 13
-# define SYSCALL_CLOBBERS "a7", "memory", \
-	SYSCALL_VREGS, "vl", "vtype", "vxrm", "vxsat"
+# define SYSCALL_CLOBBERS "a7", "memory", SYSCALL_VREGS
 #else
 # define SYSCALL_CLOBBERS "a7", "memory"
 #endif

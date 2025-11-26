@@ -115,11 +115,11 @@ memset_musl(void *dest, int c, size_t n)
 	IF64(f(musl)) \
 	f(scalar) \
 	f(scalar_autovec) \
-	MX(f, rvv) \
-	MX(f, rvv_align) \
-	MX(f, rvv_vlmax) \
-	MX(f, rvv_tail) \
-	MX(f, rvv_tail_4x) \
+	MX(f, rvv)
+	// MX(f, rvv_align)
+	// MX(f, rvv_vlmax)
+	// MX(f, rvv_tail)
+	// MX(f, rvv_tail_4x)
 
 typedef void *Func(void *dest, int c, size_t n);
 

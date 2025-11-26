@@ -148,13 +148,13 @@ memcpy_musl(void *restrict dest, void const *restrict src, size_t n)
 	f(musl) \
 	f(scalar) \
 	f(scalar_autovec) \
-	MX(f, rvv) \
-	MX(f, rvv_align_dest) \
-	MX(f, rvv_align_src) \
-	MX(f, rvv_align_dest_hybrid) \
-	MX(f, rvv_vlmax) \
-	MX(f, rvv_tail) \
-	MX(f, rvv_128) \
+	MX(f, rvv)
+	// MX(f, rvv_align_dest)
+	// MX(f, rvv_align_src)
+	// MX(f, rvv_align_dest_hybrid)
+	// MX(f, rvv_vlmax)
+	// MX(f, rvv_tail)
+	// MX(f, rvv_128)
 
 typedef void *Func(void *restrict dest, void const *restrict src, size_t n);
 
