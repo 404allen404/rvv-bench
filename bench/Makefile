@@ -3,7 +3,7 @@
 include ../config.mk
 
 # memcpy memset memreverse utf8_count strlen mergelines mandelbrot chacha20 poly1305 ascii_to_utf16 ascii_to_utf32 byteswap LUT4 LUT6 hist base64_encode trans8x8e8 trans8x8e16
-EXECS=memcpy memset poly1305
+EXECS=memcpy memset
 
 all: ${EXECS}
 
